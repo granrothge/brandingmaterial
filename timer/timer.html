@@ -2,8 +2,8 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>NOBUGS Countdown Clock</title>
-    
+    <title>Countdown Clock</title>
+
 <style>
 
 body{
@@ -67,7 +67,7 @@ h1{
 	text-align: center;
 	font-size: 24px;
 	vertical-align: text-top;
-	margin-left: auto; 
+	margin-left: auto;
 	margin-right: auto;
 	text-align: justify;
 	text-justify: distribute-all-lines;
@@ -112,7 +112,7 @@ h1{
 
 <body translate="no" >
 
-    <h1>NOBUGS 2016</h1>
+    <h1>Silence</h1>
 	<div id="clockdiv">
   	<div>
     		<span class="minutes"></span>
@@ -124,7 +124,7 @@ h1{
   	</div>
 	</div>
 
-	<br/>    
+	<br/>
 
 	<div id="question">
 		Questions
@@ -132,13 +132,13 @@ h1{
 
 	<div id="controls">
 		<div onclick="keynote()">
-			Keynote
+			15
 		</div>
 		<div onclick="oral()">
-			Oral
+			10
 		</div>
 		<div onclick="minioral()">
-			Mini-Oral
+			5
 		</div>
 		<span class="stretch"></span>
 	</div>
@@ -179,11 +179,11 @@ function initializeClock(id, endtime) {
 }
 
 function keynote() {
-	var deadline = new Date(Date.now() + 45 * 60 * 1000);
+	var deadline = new Date(Date.now() + 15 * 60 * 1000);
 	initializeClock('clockdiv', deadline);
 }
 function oral() {
-	var deadline = new Date(Date.now() + 15 * 60 * 1000);
+	var deadline = new Date(Date.now() + 10 * 60 * 1000);
 	initializeClock('clockdiv', deadline);
 }
 function minioral() {
@@ -195,6 +195,6 @@ var timeinterval = 0;
 var clock = document.getElementById('clockdiv');
 clock.style.display = 'none';
 </script>
-    
+
 </body>
 </html>
